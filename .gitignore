@@ -1,0 +1,146 @@
+# ════════════════════════════════════════════════════════════════
+# ETHERIAL PROJECT .GITIGNORE
+# ════════════════════════════════════════════════════════════════
+
+# ────────────────────────────────────────────────────────────────
+# Dependencies
+# ────────────────────────────────────────────────────────────────
+node_modules/
+.pnp/
+.pnp.js
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ────────────────────────────────────────────────────────────────
+# Environment Variables (NEVER COMMIT THESE)
+# ────────────────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.development
+.env.production
+.env.test
+
+# ────────────────────────────────────────────────────────────────
+# Build & Output Directories
+# ────────────────────────────────────────────────────────────────
+build/
+dist/
+out/
+.next/
+.cache/
+.turbo/
+
+# ────────────────────────────────────────────────────────────────
+# GunDB Local Data (Should not be committed)
+# ────────────────────────────────────────────────────────────────
+.gun-data/
+radata/
+radata-*
+*.gun
+gun_data/
+
+# ────────────────────────────────────────────────────────────────
+# Testing & Coverage
+# ────────────────────────────────────────────────────────────────
+coverage/
+.coverage/
+*.lcov
+.nyc_output/
+jest.coverage/
+
+# ────────────────────────────────────────────────────────────────
+# IDE & Editor Files
+# ────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.vim/
+.emacs.d/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+
+# ────────────────────────────────────────────────────────────────
+# OS-Specific Files
+# ────────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.exe
+*.o
+*.so
+
+# ────────────────────────────────────────────────────────────────
+# Logs & Debug Files
+# ────────────────────────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+debug.log*
+.pm2/
+.nodemon.json
+
+# ────────────────────────────────────────────────────────────────
+# Temporary Files
+# ────────────────────────────────────────────────────────────────
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
+.tmp/
+
+# ────────────────────────────────────────────────────────────────
+# TypeScript
+# ────────────────────────────────────────────────────────────────
+*.tsbuildinfo
+dist/
+**/*.d.ts
+
+# ────────────────────────────────────────────────────────────────
+# Local Scripts (Don't commit personal test scripts)
+# ────────────────────────────────────────────────────────────────
+*.local.js
+test-*.js
+manual-*.js
+debug-*.js
+
+# ────────────────────────────────────────────────────────────────
+# Package Manager Lock Files (use one only)
+# ────────────────────────────────────────────────────────────────
+# If using pnpm, lock file is tracked
+# If using npm, remove package-lock.json from .gitignore
+# If using yarn, remove yarn.lock from .gitignore
+
+# ────────────────────────────────────────────────────────────────
+# Environment Specific
+# ────────────────────────────────────────────────────────────────
+.env.local
+.env.*.local
+
+# ════════════════════════════════════════════════════════════════
+# SECURITY NOTE:
+# ════════════════════════════════════════════════════════════════
+# This project implements Blind Authentication where emails
+# and credentials are NEVER stored on any server.
+#
+# However, for local development:
+# - NEVER commit .env files
+# - NEVER commit configuration with real credentials
+# - Use .env.local for local overrides
+# - Use .env.example as template
+#
+# ════════════════════════════════════════════════════════════════
